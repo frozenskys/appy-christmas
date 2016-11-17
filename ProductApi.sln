@@ -3,25 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.25914.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FC63F738-E135-4714-8206-C03B23F01D3C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApi", "src\ProductApi\ProductApi.csproj", "{1B27AC9A-9EA4-464B-B103-85E4EF5DEC23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApi", "src\ProductApi\ProductApi.csproj", "{73163238-943F-44B9-A3B9-C0B2ACE91364}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1B27AC9A-9EA4-464B-B103-85E4EF5DEC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B27AC9A-9EA4-464B-B103-85E4EF5DEC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B27AC9A-9EA4-464B-B103-85E4EF5DEC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B27AC9A-9EA4-464B-B103-85E4EF5DEC23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Debug|x64.ActiveCfg = Debug|x64
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Debug|x64.Build.0 = Debug|x64
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Debug|x86.ActiveCfg = Debug|x86
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Debug|x86.Build.0 = Debug|x86
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Release|x64.ActiveCfg = Release|x64
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Release|x64.Build.0 = Release|x64
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Release|x86.ActiveCfg = Release|x86
+		{73163238-943F-44B9-A3B9-C0B2ACE91364}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{1B27AC9A-9EA4-464B-B103-85E4EF5DEC23} = {FC63F738-E135-4714-8206-C03B23F01D3C}
 	EndGlobalSection
 EndGlobal
