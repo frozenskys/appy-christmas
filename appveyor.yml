@@ -18,12 +18,9 @@ test: off
 branches:
   # Whitelist
   only:
-    - develop
     - master
-    - /r/.*/
-    - /release/.*/
-    - /hotfix/.*/
     - netcore11
+    - netcore11-ef
 
 # Build cache
 cache:
