@@ -24,9 +24,10 @@ Running `cake` from the commandline will build and spin up a simple aspnet core 
 * `http://localhost:5000/api/products/{x}/` - this will return the product with the id of x (zero based remember!)
 * `http://localhost:5000/swagger/ui/index.html`  - a swagger ui page allowing you to test the api.
 
-**You will probably need to install the [ASP.NET Core 1.1 SDK](https://www.microsoft.com/net/download/core) to be able to run this.**
+**You will probably need to install the [.NET Core 1.0.1 SDK](https://www.microsoft.com/net/download/core) to be able to run this locally.**
 
 The product list is just hard coded into the `getProducts()` method
+
 If you want something that is DB backed then try the entityframework branch
 
 The public URL for this API is <http://appychristmas.azurewebsites.net/api/products/> with the swagger endpoint available here <http://appychristmas.azurewebsites.net/swagger/ui/index.html>
@@ -59,6 +60,8 @@ The public URL for this API is <http://appychristmas.azurewebsites.net/api/produ
 If you'd like to setup a CD pipeline and host your own copy of this endpoint you can sign up for [AppVeyor](https://www.appveyor.com/) for free
 which will link to your github fork of this repo and build the dotnet api for you. If you sign up for a free [Azure](https://portal.azure.com) account you can
 host this as an API service for free and configure AppVeyor to publish to your Azure service. The key to this is changing the deploy details in the AppVeyor.yml.
+
+If you want to edit this in VS2015 or VS2017 then you will need to install the [.NET Core VS Tools Preview](https://www.microsoft.com/net/download/core).
 
 ## License
 
