@@ -20,9 +20,9 @@ There are included assets to get you started but you can supplement these if you
 
 Running `cake` from the commandline will build and spin up a simple aspnet core api with the following endpoints
 
-* `http://localhost:5000/api/products/` - this will return a list of products
-* `http://localhost:5000/api/products/{x}/` - this will return the product with the id of x (zero based remember!)
-* `http://localhost:5000/swagger/ui/index.html`  - a swagger ui page allowing you to test the api.
+* `http://localhost:56679/api/products/` - this will return a list of products
+* `http://localhost:56679/api/products/{x}/` - this will return the product with the id of x (zero based remember!)
+* `http://localhost:56679/swagger/ui/index.html`  - a swagger ui page allowing you to test the api.
 
 **You will probably need to install the [.NET Core 1.1 SDK](https://www.microsoft.com/net/download/core) to be able to run this locally.**
 
