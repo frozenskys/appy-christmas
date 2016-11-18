@@ -1,9 +1,4 @@
 # Build script
-environment:
-  website_name: appychristmas
-  website_psw:
-    secure: AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA024zePPvCk66gydYIQs9yAAAAAACAAAAAAADZgAAwAAAABAAAAB+S5P1aJBIWhhkE+KiLdv0AAAAAASAAACgAAAAEAAAAJPtZ5ujVMi64DpIJh8lHv4YAAAApa0suOy34O14yJnlFRxU5MqVR8XtH/v6FAAAABr7QCyAlMkCTbyPuHaAtJgjl4w8
-
 init:
   - git config --global core.autocrlf true
 
@@ -28,4 +23,16 @@ cache:
 
 artifacts:
 - path: artifacts
-  name: appychristmas
+  name: appychristmasef
+
+deploy:
+- provider: WebDeploy
+  server: https://appychristmasef.scm.azurewebsites.net:443/msdeploy.axd?site=appychristmasef
+  website: appychristmasef
+  username: $appychristmasef
+  password:
+    secure: otmgf0ZgnmsJkG1b7xDwzkdy1JXr4pNLrMulnDjvR0JL8Q7n3rGwNmW2QxAj
+  artifact: appychristmasef
+  aspnet_core: true
+  remove_files: true
+  aspnet_core_force_restart: true
