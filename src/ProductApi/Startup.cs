@@ -5,7 +5,10 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
-    
+    using Microsoft.EntityFrameworkCore;
+
+    using ProductApi.Models;
+
     public class Startup
     {
         public Startup(IHostingEnvironment env)
@@ -24,12 +27,13 @@
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.AddDbContext<ProductContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc();
             services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, ProductContext context)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -37,6 +41,8 @@
             app.UseMvc();
             app.UseSwagger();
             app.UseSwaggerUi();
+
+            DbInitializer.Initialize(context);
         }
     }
 }
