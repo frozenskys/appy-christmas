@@ -1,6 +1,6 @@
 # Appy Christmas
 
-[![Build status](https://ci.appveyor.com/api/projects/status/psapnvypec32jwm1/branch/master?svg=true)](https://ci.appveyor.com/project/frozenskys/appy-christmas/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/psapnvypec32jwm1/branch/netcore11-ef?svg=true)](https://ci.appveyor.com/project/frozenskys/appy-christmas/branch/netcore11-ef)
 
 Mobile App Development Challange
 
