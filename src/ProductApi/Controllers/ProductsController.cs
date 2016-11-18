@@ -5,8 +5,6 @@
     using ProductApi.Models;
     using System.Threading.Tasks;
     using Microsoft.EntityFrameworkCore;
-    using System.Net;
-    using Swashbuckle.SwaggerGen.Annotations;
 
     [Route("api/[controller]")]
     public class ProductsController : Controller

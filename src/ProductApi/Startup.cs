@@ -6,7 +6,6 @@
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using Microsoft.EntityFrameworkCore;
-
     using ProductApi.Models;
 
     public class Startup
