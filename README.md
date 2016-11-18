@@ -24,7 +24,7 @@ Running `cake` from the commandline will build and spin up a simple aspnet core 
 * `http://localhost:5000/api/products/{x}/` - this will return the product with the id of x (zero based remember!)
 * `http://localhost:5000/swagger/ui/index.html`  - a swagger ui page allowing you to test the api.
 
-**You will probably need to install the [.NET Core 1.0.1 SDK](https://www.microsoft.com/net/download/core) to be able to run this locally.**
+**You will probably need to install the [.NET Core 1.1 SDK](https://www.microsoft.com/net/download/core) to be able to run this locally.**
 
 The product list is just hard coded into the `getProducts()` method
 
