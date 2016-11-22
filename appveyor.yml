@@ -4,7 +4,7 @@ init:
 
 install:
   - ps: appveyor DownloadFile https://go.microsoft.com/fwlink/?LinkID=835014 -FileName "c:\dotnet.exe"
-  - ps: c:\dotnet.exe /quiet
+  - ps: c:\dotnet.exe /install /quiet /norestart
 
 # Build script
 build_script:
