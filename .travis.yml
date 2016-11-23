@@ -3,6 +3,9 @@ os:
   - osx
   - linux
 
+mono: none
+dotnet: 1.0.0-preview2-003177
+
 # .NET CLI require Ubuntu 14.04
 sudo: required
 dist: trusty
