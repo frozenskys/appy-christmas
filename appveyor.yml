@@ -2,10 +2,6 @@
 init:
   - git config --global core.autocrlf true
 
-install:
-  - ps: appveyor DownloadFile https://go.microsoft.com/fwlink/?LinkID=835014 -FileName "c:\dotnet.exe"
-  - ps: Start-Process "c:\dotnet.exe" -ArgumentList "/install /quiet /norestart" -Wait 
-
 # Build script
 build_script:
   - ps: .\build.ps1 -Target "AppVeyor" -Configuration "Release"
@@ -28,15 +24,3 @@ cache:
 artifacts:
 - path: artifacts
   name: appychristmasef
-
-deploy:
-- provider: WebDeploy
-  server: https://appychristmasef.scm.azurewebsites.net:443/msdeploy.axd?site=appychristmasef
-  website: appychristmasef
-  username: $appychristmasef
-  password:
-    secure: otmgf0ZgnmsJkG1b7xDwzkdy1JXr4pNLrMulnDjvR0JL8Q7n3rGwNmW2QxAj
-  artifact: appychristmasef
-  aspnet_core: true
-  remove_files: true
-  aspnet_core_force_restart: true
