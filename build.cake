@@ -62,7 +62,7 @@ Task("Publish")
             Configuration = "Release",
             OutputDirectory = "./artifacts/"
         };
-        DotNetCorePublish("./src/", settings);
+        DotNetCorePublish("./src/ProductApi/ProductApi.csproj", settings);
 });
 
 Task("Run")
